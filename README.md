@@ -13,7 +13,9 @@ This repository contains my **Android development learning projects**, where all
 Instead of creating a new project for every topic, I follow a structured approach:
 
 ✅ One main project
+
 ✅ Each new Android concept → implemented using a **new Activity**
+
 ✅ Separate XML layouts and required resources added for every feature
 
 ## 📱 Project Structure
