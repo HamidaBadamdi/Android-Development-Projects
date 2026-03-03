@@ -1,5 +1,13 @@
 # Android-Development-Projects
 
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![IDE](https://img.shields.io/badge/IDE-Android%20Studio-3DDC84)
+![Language](https://img.shields.io/badge/Language-Java-blue)
+![Build](https://img.shields.io/badge/Build-Gradle-orange)
+![Status](https://img.shields.io/badge/Project-Active-success)
+![Type](https://img.shields.io/badge/Learning-Project-informational)
+
+---
 This repository contains my **Android development learning projects**, where all concepts are implemented inside a **single Android project** named **MyApplicationMCA**.
 
 Instead of creating a new project for every topic, I follow a structured approach:
