@@ -56,7 +56,7 @@ public class ImageViewActivity extends AppCompatActivity {
                 else
                 {
                     imgview.setImageResource(R.drawable.mulogo);
-                    Toast.makeText(ImageViewActivity.this, "Image Changed Back", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Image Changed Back", Toast.LENGTH_SHORT).show();
                     isFirstImg=true;
                 }
 

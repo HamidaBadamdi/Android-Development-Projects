@@ -33,6 +33,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,6 +48,7 @@ public class SharedPreferenceActivity extends AppCompatActivity {
     TextView tvResult;
 
     SharedPreferences sp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,21 +59,25 @@ public class SharedPreferenceActivity extends AppCompatActivity {
         btnLoad = findViewById(R.id.btnLoad);
         tvResult = findViewById(R.id.tvResult);
 
-        sp = getSharedPreferences("MyApp" , MODE_PRIVATE);
+        sp = getSharedPreferences("MyApp", MODE_PRIVATE);
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                String name =  edtUsername.getText().toString().trim();
+                String name = edtUsername.getText().toString().trim();
 
-                if(!name.isEmpty()) {
+                if (!name.isEmpty()) {
+                    //SharedPreferences.Editor editor = sp.edit()
                     SharedPreferences.Editor editor = sp.edit();
                     editor.putString("username", name);
                     editor.apply();
 
                     tvResult.setText("Saved!");
                     edtUsername.setText("");
+                } else {
+
+                    Toast.makeText(SharedPreferenceActivity.this, "Please, enter the data!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -79,7 +85,7 @@ public class SharedPreferenceActivity extends AppCompatActivity {
         btnLoad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String saved_data = sp.getString("username" , "No Data available!");
+                String saved_data = sp.getString("username", "No Data available!");
                 tvResult.setText(saved_data);
 
             }

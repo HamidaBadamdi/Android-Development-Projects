@@ -74,12 +74,20 @@ public class ListViewActivity extends AppCompatActivity {
             }
         });
 
-       listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-           @Override
-           public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-               list.remove(i);
-               adapter.notifyDataSetChanged();
-           }
-       });
+        btnRemove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        list.remove(i);
+                        adapter.notifyDataSetChanged();
+                    }
+                });
+
+            }
+        });
+
     }
 }

@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Unit1Activity extends AppCompatActivity {
     LinearLayout layout1,layout2, layout3;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

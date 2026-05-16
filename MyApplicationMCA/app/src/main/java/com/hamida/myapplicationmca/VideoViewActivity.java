@@ -11,11 +11,6 @@ Concepts Used:
 • Android Resources (raw folder)
 • Event Handling (Button Clicks)
 
-Features:
-- Supports both offline and online video playback
-- Simple UI interaction
-- Uses URI for media source handling
-
 Note:
 - Local video must be placed inside res/raw folder
 - Internet permission is required for online video playback

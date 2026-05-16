@@ -3,16 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Sensor Permission -->
-    <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-feature
-        android:name="android.hardware.camera.flash"
-        android:required="true" />
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -23,6 +13,42 @@
         android:roundIcon="@drawable/mulogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationMCA">
+        <activity
+            android:name=".RecycleViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DigitalClockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnalogClockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiAutoCompleteTvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AutoCompleteTVActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RatingBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContextMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreferenceActivity"
+            android:exported="false" />
         <activity
             android:name=".ListViewActivity"
             android:exported="false" />
@@ -52,9 +78,7 @@
             android:exported="false" />
         <activity
             android:name=".LocationActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".CallActivity"
             android:exported="false" />
@@ -97,7 +121,6 @@
         <activity
             android:name=".SyllabusActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

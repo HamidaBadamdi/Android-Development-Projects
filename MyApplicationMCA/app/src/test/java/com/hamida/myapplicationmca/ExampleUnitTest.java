@@ -1,4 +1,4 @@
-package com.example.myapplicationmca;
+package com.hamida.myapplicationmca;
 
 import org.junit.Test;
 

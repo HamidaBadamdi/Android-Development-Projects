@@ -36,7 +36,6 @@ public class LoginActivity extends AppCompatActivity {
                 if (username.equals("Ruhi") && pass.equals("123")) {
                     Intent intent = new Intent(LoginActivity.this, WelcomeActivity.class);
                     intent.putExtra("usrname", username);
-                    intent.putExtra("pass", pass);
                     startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "Invalid Username or Password!", Toast.LENGTH_LONG).show();

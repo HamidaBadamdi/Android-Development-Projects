@@ -53,7 +53,7 @@ public class SyllabusActivity extends AppCompatActivity {
         unit4Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SyllabusActivity.this , Unit3Activity.class);
+                Intent intent = new Intent(SyllabusActivity.this , Unit4Activity.class);
                 startActivity(intent);
             }
         });
